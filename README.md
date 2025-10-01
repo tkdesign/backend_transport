@@ -2,6 +2,9 @@
 
 This repository demonstrates an example implementation of a transport management system API on the Django REST Framework.
 
+The related frontend application can be found here: 
+[frontend_transport](https://github.com/tkdesign/frontend_transport)
+
 ## Project Overview
 
 The system manages transport orders and their associated waypoints. It provides REST API endpoints for creating, listing, and retrieving transport orders, each of which can have multiple waypoints (Pickup/Delivery locations).
