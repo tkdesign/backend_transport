@@ -1,0 +1,56 @@
+[
+  {
+    "model": "transport.order",
+    "pk": 1,
+    "fields": {
+      "order_number": "ORD123",
+      "customer_name": "John Doe",
+      "date": "2025-09-01"
+    }
+  },
+  {
+    "model": "transport.waypoint",
+    "pk": 1,
+    "fields": {
+      "order": 1,
+      "location": "New York",
+      "type": "Pickup"
+    }
+  },
+  {
+    "model": "transport.waypoint",
+    "pk": 2,
+    "fields": {
+      "order": 1,
+      "location": "Boston",
+      "type": "Delivery"
+    }
+  },
+  {
+    "model": "transport.order",
+    "pk": 2,
+    "fields": {
+      "order_number": "ORD124",
+      "customer_name": "Alice Smith",
+      "date": "2025-09-15"
+    }
+  },
+  {
+    "model": "transport.waypoint",
+    "pk": 3,
+    "fields": {
+      "order": 2,
+      "location": "Chicago",
+      "type": "Pickup"
+    }
+  },
+  {
+    "model": "transport.waypoint",
+    "pk": 4,
+    "fields": {
+      "order": 2,
+      "location": "San Francisco",
+      "type": "Delivery"
+    }
+  }
+]
