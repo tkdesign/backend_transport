@@ -1,5 +1,6 @@
 from rest_framework import viewsets, filters
 from django_filters.rest_framework import DjangoFilterBackend
+from django.http import JsonResponse
 from .models import Order
 from .serializers import OrderSerializer
 
@@ -11,3 +12,11 @@ class OrderViewSet(viewsets.ModelViewSet):
     filter_backends = [DjangoFilterBackend, filters.SearchFilter]
     filterset_fields = ["date", "customer_name"]
     search_fields = ["order_number", "customer_name"]
+
+def custom_404(request, exception):
+    response = JsonResponse({
+        'detail': 'Not found',
+        'status_code': 404
+    })
+    response.status_code = 404
+    return response

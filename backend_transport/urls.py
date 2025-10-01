@@ -24,3 +24,5 @@ router.register(r'orders', OrderViewSet, basename='order')
 urlpatterns = [
     path('api/', include(router.urls)),
 ]
+
+handler404 = 'transport.views.custom_404'
